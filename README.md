@@ -24,10 +24,12 @@ Useful bash scripts to save time
 $ cd ~
 $ code ~/.zshrc
  
- alias find='~/ENTER_YOUR_PATH//filefind.sh'
- alias ss='~/ENTER_YOUR_PATH/custom_screenshot_mac.sh'
- 
- -----------------------------
+ Set Alias: alias find='~/ENTER_YOUR_PATH//filefind.sh'
+ -------
+ Set Alias: alias ss='~/ENTER_YOUR_PATH/custom_screenshot_mac.sh'
+ -------
+
+-----------------------------
  # Example Execution
  
 $ ss
