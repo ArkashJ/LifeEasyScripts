@@ -13,5 +13,5 @@ filename="${custom_name}_$(date +%Y-%m-%d).png"
 filepath="$HOME/Desktop/$filename"
 
 # Add a delay (e.g., 5 seconds) and take a screenshot, saving it to the Desktop
-sleep 4
+sleep 2
 screencapture -x "$filepath"
