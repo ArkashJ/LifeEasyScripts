@@ -38,3 +38,5 @@ $ ss
 
 $ find lifeEASYscripts
 ### Output: ./Desktop/LifeEasyScripts
+-----------------------------
+### Note: Run source ~/.zshrc after saving your changes on a text editor
