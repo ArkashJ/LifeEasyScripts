@@ -24,17 +24,17 @@ Useful bash scripts to save time
 $ cd ~
 $ code ~/.zshrc
  
-# alias find='~/ENTER_YOUR_PATH//filefind.sh'
-# alias ss='~/ENTER_YOUR_PATH/custom_screenshot_mac.sh'
+### alias find='~/ENTER_YOUR_PATH//filefind.sh'
+### alias ss='~/ENTER_YOUR_PATH/custom_screenshot_mac.sh'
 
 -----------------------------
  # Example Execution
  
 $ ss
-# Output: "Enter screenshot name:" Github
+### Output: "Enter screenshot name:" Github
  
  $ find lifeeasyscripts 
-# Output: ./Desktop/LifeEasyScripts
+### Output: ./Desktop/LifeEasyScripts
 
 $ find lifeEASYscripts
-# Output: ./Desktop/LifeEasyScripts
+### Output: ./Desktop/LifeEasyScripts
