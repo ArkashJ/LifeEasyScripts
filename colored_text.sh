@@ -12,12 +12,12 @@ RESET="\033[0m"
 uptime_info=$(uptime)
 uptime_pretty=$(echo "$uptime_info" | awk -F'up ' '{print $2}' | awk -F',' '{print $1}')
 
-echo -e "${RED}#   _      _____ _     ____  ____  _      _____ ${RESET}             "        
-echo -e "${GREEN}#  / \\  /|/  __// \\   /   _\\/  _ \\/ \\__/|/  __/ ${RESET}      " "${CYAN}Hello, Arkash!${RESET}"
-echo -e "${YELLOW}#  | |  |||  \\  | |   |  /  | / \\|| |\\/|||  \\   ${RESET}      "
-echo -e "${BLUE}#  | |/\\|||  /_ | |_\\|  \\_ | \\_/|| |  |||  /_  ${RESET}         " "${GREEN}System uptime: $uptime_pretty${RESET}"
+echo -e "${RED}#   _      _____ _     ____  ____  _      _____              ${RESET}"        
+echo -e "${GREEN}#  / \\  /|/  __// \\   /   _\\/  _ \\/ \\__/|/  __/       ${RESET}" "${CYAN}Hello, Arkash!${RESET}"
+echo -e "${YELLOW}#  | |  |||  \\  | |   |  /  | / \\|| |\\/|||  \\         ${RESET}"
+echo -e "${BLUE}#  | |/\\|||  /_ | |_\\|  \\_ | \\_/|| |  |||  /_           ${RESET}" "${GREEN}System uptime: $uptime_pretty${RESET}"
 echo -e "${MAGENTA}#  \\_/  \\|\\____\\\\____/\\____/\\____/\\_/  \\|\\____\\       "
-echo -e "${CYAN}#                                              ${RESET}             " "${YELLOW}Current date and time: $(date)${RESET}"
+echo -e "${CYAN}#                                                           ${RESET}" "${YELLOW}Current date and time: $(date)${RESET}"
 
 osascript <<EOD
 tell application "Warp"
