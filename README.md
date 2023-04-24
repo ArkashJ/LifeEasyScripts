@@ -23,6 +23,11 @@ Useful bash scripts to save time
 - Script to sleep mac
 - $ "chmod +x sleep.sh"
 
+4. lock.sh
+
+- Script to lock mac screen
+- $ "chmod +x lock.sh"
+
 -----------------------------
 ## Setting Aliases
 
@@ -32,6 +37,7 @@ $ code ~/.zshrc
 ### alias find='~/ENTER_YOUR_PATH//filefind.sh'
 ### alias ss='~/ENTER_YOUR_PATH/custom_screenshot_mac.sh'
 ### alias slp='~/ENTER_YOUR_PATH/sleep.sh'
+### alias lck='~/ENTER_YOUR_PATH/lock.sh'
 
 -----------------------------
  # Example Execution
