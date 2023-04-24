@@ -24,9 +24,14 @@ def get_tasks():
 
 def list_tasks():
     tasks = get_tasks()
-    print("Tasks:")
-    for i, task in enumerate(tasks, start=1):
-        print(f"{i}. {task}")
+    if not tasks:
+        print("No tasks")
+    else:
+        print("\n")
+        print("Tasks:")
+        for i, task in enumerate(tasks, start=1):
+            print(f"{i}. {task}")
+
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:

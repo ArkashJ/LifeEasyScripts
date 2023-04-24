@@ -27,3 +27,4 @@ EOD
 
 python3 ~/Desktop/LifeEasyScripts/hackerNews.py
 python3 ~/Desktop/LifeEasyScripts/stocksToFollow.py
+python3 ~/Desktop/LifeEasyScripts/tasks.py list

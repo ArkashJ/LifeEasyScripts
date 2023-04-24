@@ -15,7 +15,7 @@ YELLOW = "\033[0;33m"
 RESET = "\033[0m"
 
 colors = [RED, GREEN, YELLOW]
-
+print("\n")
 print("Stock Prices:", end=" ")
 for i, (ticker, price) in enumerate(stock_info.items()):
     print(f"{colors[i]}{ticker}: ${price:.2f}{RESET}", end=" " * (20 - len(ticker)))
