@@ -28,6 +28,9 @@ Useful bash scripts to save time
 - Script to lock mac screen
 - $ "chmod +x lock.sh"
 
+5. empty_trash.sh
+
+- Script to empty the trash
 -----------------------------
 ## Setting Aliases
 
@@ -38,6 +41,7 @@ $ code ~/.zshrc
 ### alias ss='~/ENTER_YOUR_PATH/custom_screenshot_mac.sh'
 ### alias slp='~/ENTER_YOUR_PATH/sleep.sh'
 ### alias lck='~/ENTER_YOUR_PATH/lock.sh'
+### alias empty='~/ENTER_YOUR_PATH/empty_trash.sh'
 
 -----------------------------
  # Example Execution
