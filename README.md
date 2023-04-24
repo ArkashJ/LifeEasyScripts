@@ -18,6 +18,11 @@ Useful bash scripts to save time
 - The screenshot is story on the desktop in the format "CustomName Year-Month-Day"
 - Make executable my running $ "chmod +x custom_screenshot_mac.sh"
 
+3. sleep.sh
+
+- Script to sleep mac
+- $ "chmod +x sleep.sh"
+
 -----------------------------
 ## Setting Aliases
 
@@ -26,6 +31,7 @@ $ code ~/.zshrc
  
 ### alias find='~/ENTER_YOUR_PATH//filefind.sh'
 ### alias ss='~/ENTER_YOUR_PATH/custom_screenshot_mac.sh'
+### alias slp='~/ENTER_YOUR_PATH/sleep.sh'
 
 -----------------------------
  # Example Execution
