@@ -16,6 +16,16 @@ echo -e "${BLUE}#  | |/\\|||  /_ | |_\\|  \\_ | \\_/|| |  |||  /_  ${RESET}"
 echo -e "${MAGENTA}#  \\_/  \\|\\____\\\\____/\\____/\\____/\\_/  \\|\\____\\"
 echo -e "${CYAN}#                                              ${RESET}"
 
+# Display my name
+echo -e "${CYAN}Hello, Arkash!${RESET}"
+
+# Display current date and time
+echo -e "${YELLOW}Current date and time: $(date)${RESET}"
+
+# Display system uptime
+uptime_info=$(uptime)
+uptime_pretty=$(echo "$uptime_info" | awk -F'up ' '{print $2}' | awk -F',' '{print $1}')
+echo -e "${GREEN}System uptime: $uptime_pretty${RESET}"
 
 osascript <<EOD
 tell application "Warp"
