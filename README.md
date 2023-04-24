@@ -31,6 +31,11 @@ Useful bash scripts to save time
 5. empty_trash.sh
 
 - Script to empty the trash
+
+6. colored_test.sh
+
+- Script to print colored welcome in my terminal everytime I open it
+
 -----------------------------
 ## Setting Aliases
 
@@ -43,6 +48,8 @@ $ code ~/.zshrc
 ### alias lck='~/ENTER_YOUR_PATH/lock.sh'
 ### alias empty='~/ENTER_YOUR_PATH/empty_trash.sh'
 
+In the .zshrc file, at the end of the file write
+### source ~/ENTER_YOUR_PATH/colored_text.sh 
 -----------------------------
  # Example Execution
  
@@ -55,4 +62,4 @@ $ ss
 $ find lifeEASYscripts
 ### Output: ./Desktop/LifeEasyScripts
 -----------------------------
-### Note: Run source ~/.zshrc after saving your changes on a text editor
+### Note: Run $ 'source ~/.zshrc' after saving your changes on a text editor
