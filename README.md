@@ -35,6 +35,7 @@ Useful bash scripts to save time
 6. colored_test.sh
 
 - Script to print colored welcome in my terminal everytime I open it
+- Calls python scripts to print the top 5 hacker news headers and links, some stocks, and a task list (alias: task_add "ADD TASK", task_remove task_index, task_list)
 
 -----------------------------
 ## Setting Aliases
