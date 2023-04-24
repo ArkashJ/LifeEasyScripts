@@ -1,6 +1,5 @@
 import requests
 import json
-
 print("\033[0;35mTop 5 hacker News articles:\033[0m")
 
 hn_top_stories_url = "https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty"

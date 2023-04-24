@@ -26,3 +26,4 @@ end tell
 EOD
 
 python3 ~/Desktop/LifeEasyScripts/hackerNews.py
+python3 ~/Desktop/LifeEasyScripts/stocksToFollow.py
