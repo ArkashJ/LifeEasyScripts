@@ -9,23 +9,15 @@ MAGENTA="\033[0;35m"
 CYAN="\033[0;36m"
 RESET="\033[0m"
 
-echo -e "${RED}#   _      _____ _     ____  ____  _      _____ ${RESET}"
-echo -e "${GREEN}#  / \\  /|/  __// \\   /   _\\/  _ \\/ \\__/|/  __/ ${RESET}"
-echo -e "${YELLOW}#  | |  |||  \\  | |   |  /  | / \\|| |\\/|||  \\   ${RESET}"
-echo -e "${BLUE}#  | |/\\|||  /_ | |_\\|  \\_ | \\_/|| |  |||  /_  ${RESET}"
-echo -e "${MAGENTA}#  \\_/  \\|\\____\\\\____/\\____/\\____/\\_/  \\|\\____\\"
-echo -e "${CYAN}#                                              ${RESET}"
-
-# Display my name
-echo -e "${CYAN}Hello, Arkash!${RESET}"
-
-# Display current date and time
-echo -e "${YELLOW}Current date and time: $(date)${RESET}"
-
-# Display system uptime
 uptime_info=$(uptime)
 uptime_pretty=$(echo "$uptime_info" | awk -F'up ' '{print $2}' | awk -F',' '{print $1}')
-echo -e "${GREEN}System uptime: $uptime_pretty${RESET}"
+
+echo -e "${RED}#   _      _____ _     ____  ____  _      _____ ${RESET}             "        
+echo -e "${GREEN}#  / \\  /|/  __// \\   /   _\\/  _ \\/ \\__/|/  __/ ${RESET}      " "${CYAN}Hello, Arkash!${RESET}"
+echo -e "${YELLOW}#  | |  |||  \\  | |   |  /  | / \\|| |\\/|||  \\   ${RESET}      "
+echo -e "${BLUE}#  | |/\\|||  /_ | |_\\|  \\_ | \\_/|| |  |||  /_  ${RESET}         " "${GREEN}System uptime: $uptime_pretty${RESET}"
+echo -e "${MAGENTA}#  \\_/  \\|\\____\\\\____/\\____/\\____/\\_/  \\|\\____\\       "
+echo -e "${CYAN}#                                              ${RESET}             " "${YELLOW}Current date and time: $(date)${RESET}"
 
 osascript <<EOD
 tell application "Warp"
