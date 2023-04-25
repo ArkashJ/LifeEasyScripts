@@ -15,7 +15,8 @@ YELLOW = "\033[0;33m"
 RESET = "\033[0m"
 
 colors = [RED, GREEN, YELLOW]
-print("Stock Prices and Moving Averages:", end=" ")
+print("\n")
+print("Stock Prices", end=" ")
 for i, (ticker, info) in enumerate(stock_info.items()):
     price, ma50, ma200 = info
     print(f"{colors[i]}{ticker}: ${price:.2f} (50-day MA: ${ma50:.2f}, 200-day MA: ${ma200:.2f}){RESET}", end=" " * (5 - len(ticker)))
