@@ -27,7 +27,6 @@ def list_tasks():
     if not tasks:
         print("No tasks")
     else:
-        print("\n")
         print("Tasks:")
         for i, task in enumerate(tasks, start=1):
             print(f"{i}. {task}")

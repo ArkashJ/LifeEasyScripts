@@ -3,7 +3,7 @@ import yfinance as yf
 def get_stock_info(ticker):
     stock = yf.Ticker(ticker)
     todays_data = stock.history(period="1d")
-    return todays_data['Close'][0]
+    return todays_data['Close'][0], stock.info['fiftyDayAverage'], stock.info['twoHundredDayAverage']
 
 tickers = ["SPY", "AMZN", "SHOP"]
 stock_info = {ticker: get_stock_info(ticker) for ticker in tickers}
@@ -15,9 +15,9 @@ YELLOW = "\033[0;33m"
 RESET = "\033[0m"
 
 colors = [RED, GREEN, YELLOW]
-print("\n")
-print("Stock Prices:", end=" ")
-for i, (ticker, price) in enumerate(stock_info.items()):
-    print(f"{colors[i]}{ticker}: ${price:.2f}{RESET}", end=" " * (20 - len(ticker)))
+print("Stock Prices and Moving Averages:", end=" ")
+for i, (ticker, info) in enumerate(stock_info.items()):
+    price, ma50, ma200 = info
+    print(f"{colors[i]}{ticker}: ${price:.2f} (50-day MA: ${ma50:.2f}, 200-day MA: ${ma200:.2f}){RESET}", end=" " * (5 - len(ticker)))
 
 print()  # Add a newline at the end
