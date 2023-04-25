@@ -19,6 +19,6 @@ print("\n")
 print("Stock Prices", end=" ")
 for i, (ticker, info) in enumerate(stock_info.items()):
     price, ma50, ma200 = info
-    print(f"{colors[i]}{ticker}: ${price:.2f} (50-day MA: ${ma50:.2f}, 200-day MA: ${ma200:.2f}){RESET}", end=" " * (5 - len(ticker)))
+    print(f"{colors[i]}{ticker}: ${price:.2f} (50D MA: ${ma50:.2f}, 200D MA: ${ma200:.2f}){RESET}", end=" " * (5 - len(ticker)))
 
 print()  # Add a newline at the end
