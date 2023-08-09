@@ -52,7 +52,7 @@ $ code ~/.zshrc
 In the .zshrc file, at the end of the file write
 ### source ~/ENTER_YOUR_PATH/colored_text.sh 
 -----------------------------
- # Example Execution
+ ## Example Execution
  
 $ ss
 ### Output: "Enter screenshot name:" Github
@@ -64,3 +64,48 @@ $ find lifeEASYscripts
 ### Output: ./Desktop/LifeEasyScripts
 -----------------------------
 ### Note: Run $ 'source ~/.zshrc' after saving your changes on a text editor
+
+
+
+### Aliases List:
+### Aliases
+alias vim='nvim'
+# Git
+alias gaa='git add --all'
+alias gcm='git commit -m'
+alias gca='git add --all && git commit -m'
+alias gpl='git pull'
+alias gp='git push'
+alias gsw='git switch'
+alias gswc='git switch -c'
+
+# Docker
+alias dps='docker ps'
+alias dpa='docker system prune --volumes'
+alias ds='docker stop'
+alias drm='docker rm'
+
+# General
+alias now='date +"%T"'
+alias nowdate='date +"%d-%m-%Y"'
+alias f='find . |grep '
+
+# Rust
+alias cr='cargo run'
+alias ct='cargo test'
+alias cb='cargo build'
+alias cc='cargo check'
+alias cclip='cargo clippy'
+alias cfmt='cargo fmt'
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+eval "$(starship init zsh)"
+
+
