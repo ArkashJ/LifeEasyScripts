@@ -68,7 +68,7 @@ $ find lifeEASYscripts
 
 
 ### Aliases List:
-### Aliases
+```
 alias vim='nvim'
 # Git
 alias gaa='git add --all'
@@ -107,5 +107,4 @@ export PATH="/opt/homebrew/opt/postgresql@15/bin:$PATH"
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 eval "$(starship init zsh)"
-
-
+```
